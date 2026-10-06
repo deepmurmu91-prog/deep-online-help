@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://deepmurmu91-prog.github.io/deep-online-help/sitemap.xml
