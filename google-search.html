@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Google Search-এ Website আনবেন কীভাবে? | Deep Online Help</title>
+
+<meta name="description" content="নিজের Website কীভাবে Google Search-এ আনবেন, Google Search Console কীভাবে ব্যবহার করবেন এবং Website Index করার জন্য কী করতে হয়—সহজ বাংলায় জানুন।">
+
+<meta name="robots" content="index, follow">
+<meta name="author" content="Deep Online Help">
+
+<link rel="canonical" href="https://deepmurmu91-prog.github.io/deep-online-help/google-search.html">
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+    line-height: 1.8;
+}
+
+header {
+    background: linear-gradient(135deg, #111827, #2563eb);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 34px;
+}
+
+header p {
+    margin-top: 8px;
+    font-size: 17px;
+}
+
+nav {
+    background: #111827;
+    text-align: center;
+    padding: 14px 5px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.container {
+    width: 92%;
+    max-width: 850px;
+    margin: 30px auto;
+}
+
+.article {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.article h1 {
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+.article h2 {
+    color: #2563eb;
+    margin-top: 28px;
+    margin-bottom: 10px;
+}
+
+.article p {
+    margin-bottom: 15px;
+}
+
+.article ol,
+.article ul {
+    margin: 10px 0 20px 25px;
+}
+
+.step {
+    background: #f1f5f9;
+    padding: 15px;
+    border-left: 4px solid #2563eb;
+    margin: 15px 0;
+    border-radius: 6px;
+}
+
+.tip {
+    background: #ecfdf5;
+    padding: 15px;
+    border-left: 4px solid #16a34a;
+    margin: 15px 0;
+    border-radius: 6px;
+}
+
+.warning {
+    background: #fff7ed;
+    padding: 15px;
+    border-left: 4px solid #f97316;
+    margin: 15px 0;
+    border-radius: 6px;
+}
+
+.back {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 11px 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #93c5fd;
+    text-decoration: none;
+    margin: 8px;
+}
+
+@media (max-width: 700px) {
+    .article {
+        padding: 22px;
+    }
+
+    .article h1 {
+        font-size: 27px;
+    }
+
+    header h1 {
+        font-size: 29px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Deep Online Help</h1>
+    <p>Technology • AI • Internet • History • Helpful Information</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="index.html#articles">Articles</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+<article class="article">
+
+<h1>Google Search-এ Website আনবেন কীভাবে?</h1>
+
+<p>
+নিজের Website তৈরি করার পর অনেকের প্রশ্ন থাকে—Website-টি কীভাবে
+Google Search-এ দেখা যাবে? Google-এর Search Engine-এ Website
+দেখানোর জন্য প্রথমে Website-টি Google-এর কাছে খুঁজে পাওয়া এবং
+Index করার সুযোগ তৈরি করতে হয়।
+</p>
+
+<h2>Google Index কী?</h2>
+
+<p>
+Google বিভিন্ন Website-এর Page খুঁজে, সেগুলো বিশ্লেষণ করে এবং
+তার Search Index-এ সংরক্ষণ করতে পারে। কোনো Page Google-এর Index-এ
+থাকলে সেটি প্রাসঙ্গিক Search Result-এ দেখানোর সুযোগ পায়।
+</p>
+
+<h2>ধাপ ১: Website Online করুন</h2>
+
+<div class="step">
+<strong>প্রথম কাজ:</strong> Website অবশ্যই Internet-এ Live থাকতে হবে।
+উদাহরণ হিসেবে GitHub Pages-এর মতো Hosting Service ব্যবহার করা যায়।
+</div>
+
+<p>
+Website-এর URL Browser-এ খুলে যদি Page ঠিকভাবে দেখা যায়, তাহলে
+প্রাথমিকভাবে Website Online আছে।
+</p>
+
+<h2>ধাপ ২: Google Search Console ব্যবহার করুন</h2>
+
+<p>
+Google Search Console হলো Website-এর Google Search সম্পর্কিত
+তথ্য এবং বিভিন্ন Search Tool ব্যবহারের একটি Google Service।
+এখানে Website-এর Property যোগ করে Ownership Verify করা যায়।
+</p>
+
+<h2>ধাপ ৩: Website Verify করুন</h2>
+
+<p>
+Search Console-এ Website যোগ করার পর Google Ownership Verification
+করতে বলতে পারে। Verification সম্পূর্ণ হলে Website-এর Search
+সম্পর্কিত বিভিন্ন Tool ব্যবহার করা যায়।
+</p>
+
+<h2>ধাপ ৪: URL Inspection করুন</h2>
+
+<p>
+Search Console-এর URL Inspection Tool-এ Website-এর নির্দিষ্ট
+Page-এর URL দেওয়া যায়। এতে Google-এর কাছে Page-এর বর্তমান
+Indexing অবস্থা সম্পর্কে তথ্য দেখা যায়।
+</p>
+
+<h2>ধাপ ৫: Indexing Request করুন</h2>
+
+<div class="step">
+<strong>URL Inspection → Request Indexing</strong>
+</div>
+
+<p>
+কোনো নতুন Page Google-এর কাছে Index করার জন্য Request করা যেতে
+পারে। তবে Request করার পর সঙ্গে সঙ্গে Google Search Result-এ
+Page দেখা যাবে—এমন নিশ্চয়তা নেই।
+</p>
+
+<h2>Website Google-এ আসতে কত সময় লাগে?</h2>
+
+<p>
+এটির নির্দিষ্ট সময় নেই। Website-এর ধরন, Content, Internal Links,
+Google-এর Crawling এবং আরও বিভিন্ন বিষয়ের ওপর সময় নির্ভর করতে
+পারে।
+</p>
+
+<div class="tip">
+<strong>মনে রাখবেন:</strong> Indexing Request করা মানেই Google
+Page-টিকে Search Result-এর প্রথম দিকে দেখাবে—এমন নয়। Indexing
+এবং Ranking দুটি আলাদা বিষয়।
+</div>
+
+<h2>Google Search-এ Website-এর Ranking কীভাবে বাড়াবেন?</h2>
+
+<ul>
+    <li>নিজস্ব ও দরকারি Content প্রকাশ করুন।</li>
+    <li>প্রতিটি Article-এর ভালো Title ও Description রাখুন।</li>
+    <li>Article-এর মধ্যে প্রাসঙ্গিক Internal Link দিন।</li>
+    <li>Website মোবাইল Friendly রাখুন।</li>
+    <li>ভুল বা বিভ্রান্তিকর তথ্য এড়িয়ে চলুন।</li>
+    <li>নিয়মিত নতুন ও মানসম্মত Content প্রকাশ করুন।</li>
+</ul>
+
+<h2>সাধারণ ভুল</h2>
+
+<p>
+শুধু Website তৈরি করলেই Google Search-এ সঙ্গে সঙ্গে প্রথমে
+দেখাবে না। আবার একই URL বারবার Indexing Request করাও প্রয়োজনীয়
+নয়। Website-এর Content এবং Technical Setup ঠিক রাখা বেশি গুরুত্বপূর্ণ।
+</p>
+
+<h2>উপসংহার</h2>
+
+<p>
+Google Search-এ Website আনার জন্য Website Online করা, Search
+Console-এ Property যোগ করা, Ownership Verify করা এবং প্রয়োজন
+অনুযায়ী URL Inspection ও Indexing Request করা যায়। এরপর
+মানসম্মত Content তৈরি করে ধীরে ধীরে Website-এর Search Visibility
+বাড়ানোর চেষ্টা করতে হয়।
+</p>
+
+<a class="back" href="index.html">← Back to Home</a>
+
+</article>
+
+</div>
+
+<footer>
+    <p>© 2026 Deep Online Help</p>
+    <br>
+    <a href="index.html">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#contact">Contact</a>
+</footer>
+
+</body>
+</html>
