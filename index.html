@@ -3,8 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <script type="application/ld+json">
+
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -16,7 +18,7 @@
     "name": "Deep Murmu"
   }
 }
-  </script>
+</script>
 
 <title>Deep Online Help | Technology, AI, Internet & Helpful Information</title>
 
@@ -163,6 +165,10 @@ text-decoration:none;
 font-weight:bold;
 }
 
+.card a:hover{
+text-decoration:underline;
+}
+
 .about,.contact{
 background:white;
 margin-top:40px;
@@ -185,6 +191,10 @@ footer a{
 color:#93c5fd;
 text-decoration:none;
 margin:8px;
+}
+
+footer a:hover{
+text-decoration:underline;
 }
 
 @media(max-width:700px){
@@ -364,7 +374,8 @@ Culture এবং বিভিন্ন গুরুত্বপূর্ণ ব
 </p>
 
 </section>
-  <section class="contact" id="contact">
+
+<section class="contact" id="contact">
 
 <h2>Contact Us</h2>
 
@@ -400,21 +411,19 @@ deepmurmu91@gmail.com
 
 <footer>
 
-<footer>
-  <p>© 2026 Deep Online Help</p>
+<p>© 2026 Deep Online Help</p>
 
-  <p>
-    <a href="privacy.html">Privacy Policy</a> |
-    <a href="terms.html">Terms & Conditions</a> |
-    <a href="disclaimer.html">Disclaimer</a>
-  </p>
-</footer>
+<p>
+<a href="privacy.html">Privacy Policy</a> |
+<a href="terms.html">Terms & Conditions</a> |
+<a href="disclaimer.html">Disclaimer</a>
+</p>
 
-<br>
-
-<a href="#home">Home</a>
-<a href="#about">About</a>
+<p>
+<a href="#home">Home</a> |
+<a href="#about">About</a> |
 <a href="#contact">Contact</a>
+</p>
 
 </footer>
 
@@ -425,7 +434,8 @@ function searchArticles(){
 let input =
 document.getElementById("searchInput")
 .value
-.toLowerCase();
+.toLowerCase()
+.trim();
 
 let cards =
 document.querySelectorAll(".card");
