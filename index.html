@@ -1,45 +1,32 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BB6NWS5J4W"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-BB6NWS5J4W');
-</script>
-
-<!-- Basic SEO -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BB6NWS5J4W"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-BB6NWS5J4W');
+</script>
+
 <meta name="description" content="Deep Online Help-এ Technology, AI, Internet, Website, Online Income, History, Culture এবং গুরুত্বপূর্ণ তথ্য সহজ ভাষায় জানুন।">
-
 <meta name="keywords" content="Deep Online Help, Technology, AI, Artificial Intelligence, Internet, Online Income, Website, Santali History, Santal History, সাঁওতাল ইতিহাস, আদিবাসী ইতিহাস, মোবাইল টিপস">
-
 <meta name="author" content="Joydeb Mandi">
-
 <meta name="robots" content="index, follow">
 
 <link rel="canonical" href="https://deepmurmu91-prog.github.io/deep-online-help/">
-
-<!-- Favicon -->
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
 <!-- Open Graph -->
-<meta property="og:title" content="Deep Online Help – Technology, AI, History & Culture">
-
+<meta property="og:title" content="Deep Online Help | Technology, AI, Internet, History & Culture">
 <meta property="og:description" content="Technology, AI, Internet, Website, Online Income, History, Culture এবং গুরুত্বপূর্ণ তথ্য সহজ ভাষায় জানুন।">
-
 <meta property="og:type" content="website">
-
 <meta property="og:url" content="https://deepmurmu91-prog.github.io/deep-online-help/">
-
 <meta property="og:site_name" content="Deep Online Help">
-
 <meta property="og:locale" content="bn_IN">
 
 <!-- Website Schema -->
@@ -49,7 +36,7 @@
   "@type": "WebSite",
   "name": "Deep Online Help",
   "url": "https://deepmurmu91-prog.github.io/deep-online-help/",
-  "description": "Technology, AI, Internet, History, Culture and helpful information in simple language.",
+  "description": "Technology, AI, Internet, Website, Online Income, History, Culture এবং গুরুত্বপূর্ণ তথ্য সহজ ভাষায় জানুন।",
   "inLanguage": "bn",
   "publisher": {
     "@type": "Person",
@@ -58,571 +45,345 @@
 }
 </script>
 
-<!-- Page Title -->
 <title>Deep Online Help | Technology, AI, Internet, History & Culture</title>
 
 <style>
-
 *{
-box-sizing:border-box;
-margin:0;
-padding:0;
-}
-
-html{
-scroll-behavior:smooth;
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
 }
 
 body{
-font-family:Arial,sans-serif;
-background:#f4f6f8;
-color:#222;
-line-height:1.7;
+  font-family:Arial, sans-serif;
+  line-height:1.7;
+  background:#f5f7fb;
+  color:#222;
 }
 
 header{
-background:linear-gradient(135deg,#111827,#2563eb);
-color:white;
-text-align:center;
-padding:50px 20px;
+  background:#111827;
+  color:white;
+  padding:20px;
+  text-align:center;
 }
 
 header h1{
-font-size:38px;
-margin-bottom:10px;
+  font-size:30px;
+  margin-bottom:5px;
 }
 
 header p{
-font-size:18px;
+  color:#d1d5db;
 }
 
 nav{
-background:#111827;
-position:sticky;
-top:0;
-z-index:1000;
-text-align:center;
-padding:15px 5px;
+  background:#1f2937;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:10px;
+  padding:12px;
 }
 
 nav a{
-color:white;
-text-decoration:none;
-margin:0 12px;
-font-weight:bold;
+  color:white;
+  text-decoration:none;
+  padding:8px 14px;
+  border-radius:6px;
 }
 
 nav a:hover{
-color:#60a5fa;
+  background:#374151;
 }
 
 .container{
-width:92%;
-max-width:1100px;
-margin:auto;
-}
-
-.hero{
-background:white;
-margin-top:25px;
-padding:40px 25px;
-border-radius:15px;
-text-align:center;
-box-shadow:0 4px 15px rgba(0,0,0,0.08);
-}
-
-.hero h2{
-font-size:30px;
-margin-bottom:15px;
-}
-
-.button{
-display:inline-block;
-background:#2563eb;
-color:white;
-padding:12px 25px;
-margin-top:20px;
-border-radius:8px;
-text-decoration:none;
-font-weight:bold;
+  max-width:1100px;
+  margin:auto;
+  padding:20px;
 }
 
 .search-box{
-text-align:center;
-margin:25px 0;
+  margin:20px 0;
+  display:flex;
+  gap:10px;
 }
 
 .search-box input{
-width:90%;
-max-width:600px;
-padding:14px;
-border:1px solid #ccc;
-border-radius:8px;
-font-size:16px;
+  flex:1;
+  padding:12px;
+  border:1px solid #ccc;
+  border-radius:6px;
+  font-size:16px;
+}
+
+.search-box button{
+  padding:12px 18px;
+  border:none;
+  border-radius:6px;
+  background:#2563eb;
+  color:white;
+  cursor:pointer;
 }
 
 .section-title{
-text-align:center;
-margin:40px 0 20px;
-font-size:30px;
+  margin:30px 0 15px;
+  font-size:25px;
 }
 
 .articles{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:20px;
 }
 
 .card{
-background:white;
-padding:25px;
-border-radius:12px;
-box-shadow:0 4px 15px rgba(0,0,0,0.08);
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 3px 12px rgba(0,0,0,0.08);
 }
 
 .card h3{
-margin-bottom:10px;
+  margin-bottom:10px;
+  font-size:20px;
 }
 
-.card a{
-color:#2563eb;
-text-decoration:none;
-font-weight:bold;
+.card p{
+  color:#555;
+  margin-bottom:15px;
 }
 
-.card a:hover{
-text-decoration:underline;
+.read-more{
+  display:inline-block;
+  background:#2563eb;
+  color:white;
+  text-decoration:none;
+  padding:8px 14px;
+  border-radius:6px;
 }
 
-.about,.contact{
-background:white;
-margin-top:40px;
-padding:35px;
-border-radius:15px;
+.read-more:hover{
+  background:#1d4ed8;
 }
 
+.about,
 .contact{
-margin-bottom:40px;
+  background:white;
+  padding:25px;
+  margin-top:30px;
+  border-radius:10px;
+  box-shadow:0 3px 12px rgba(0,0,0,0.08);
 }
 
 footer{
-background:#111827;
-color:white;
-text-align:center;
-padding:30px 15px;
+  margin-top:40px;
+  background:#111827;
+  color:white;
+  text-align:center;
+  padding:25px 15px;
 }
 
 footer a{
-color:#93c5fd;
-text-decoration:none;
-margin:8px;
+  color:#93c5fd;
+  text-decoration:none;
+  margin:0 8px;
 }
 
-footer a:hover{
-text-decoration:underline;
+.no-result{
+  display:none;
+  text-align:center;
+  margin:20px 0;
+  color:#777;
 }
 
-@media(max-width:700px){
+@media(max-width:600px){
+  header h1{
+    font-size:25px;
+  }
 
-header h1{
-font-size:30px;
+  .search-box{
+    flex-direction:column;
+  }
+
+  .search-box button{
+    width:100%;
+  }
 }
-
-nav a{
-display:inline-block;
-margin:5px 7px;
-}
-
-.articles{
-grid-template-columns:1fr;
-}
-
-.hero h2{
-font-size:25px;
-}
-
-}
-
 </style>
-
 </head>
 
 <body>
 
 <header>
-
-<h1>Deep Online Help</h1>
-
-<p>
-Technology • AI • Internet • History • Culture • Helpful Information
-</p>
-
+  <h1>Deep Online Help</h1>
+  <p>Technology • AI • Internet • History • Culture • Online Income</p>
 </header>
 
 <nav>
-
-<a href="#home">Home</a>
-
-<a href="#articles">Articles</a>
-
-<a href="#about">About</a>
-
-<a href="#contact">Contact</a>
-
+  <a href="index.html">Home</a>
+  <a href="#articles">Articles</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
 </nav>
 
 <div class="container">
 
-<section class="hero" id="home">
+  <!-- Search -->
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="আর্টিকেল খুঁজুন...">
+    <button onclick="searchArticles()">Search</button>
+  </div>
 
-<h2>Welcome to Deep Online Help</h2>
+  <p class="no-result" id="noResult">কোনো Article পাওয়া যায়নি।</p>
 
-<p>
-সহজ ভাষায় Technology, AI, Internet, History,
-Culture এবং বিভিন্ন গুরুত্বপূর্ণ তথ্য জানার জন্য
-আমাদের Website।
-</p>
+  <!-- Articles -->
+  <section id="articles">
+    <h2 class="section-title">Latest Articles</h2>
 
-<a class="button" href="#articles">
-Read Articles
-</a>
+    <div class="articles" id="articleList">
 
-</section>
+      <div class="card">
+        <h3>Artificial Intelligence (AI) কী?</h3>
+        <p>AI কীভাবে কাজ করে, কোথায় ব্যবহার হয় এবং ভবিষ্যতে এর গুরুত্ব কী হতে পারে তা সহজ ভাষায় জানুন।</p>
+        <a class="read-more" href="ai.html">Read More</a>
+      </div>
 
-<div class="search-box">
+      <div class="card">
+        <h3>নিজের Website কীভাবে তৈরি করবেন?</h3>
+        <p>মোবাইল ব্যবহার করে সহজভাবে নিজের Website তৈরি করার প্রাথমিক ধারণা জানুন।</p>
+        <a class="read-more" href="website.html">Read More</a>
+      </div>
 
-<input
-type="text"
-placeholder="Search Articles..."
-onkeyup="searchArticles()"
-id="searchInput">
+      <div class="card">
+        <h3>সাঁওতালি সংস্কৃতি ও ইতিহাস</h3>
+        <p>সাঁওতাল সমাজ, সংস্কৃতি, ঐতিহ্য এবং ইতিহাস সম্পর্কে গুরুত্বপূর্ণ তথ্য জানুন।</p>
+        <a class="read-more" href="santali-history.html">Read More</a>
+      </div>
 
-</div>
+      <div class="card">
+        <h3>ভারতের আদিবাসী ইতিহাস</h3>
+        <p>ভারতের Indigenous ও আদিবাসী জনগোষ্ঠীর ইতিহাস এবং গুরুত্বপূর্ণ বিষয়গুলো জানুন।</p>
+        <a class="read-more" href="indigenous-history.html">Read More</a>
+      </div>
 
-<h2 class="section-title" id="articles">
-Latest Articles
-</h2>
+      <div class="card">
+        <h3>ভারতের Tribal History</h3>
+        <p>ভারতের বিভিন্ন Tribal জনগোষ্ঠীর ইতিহাস, ঐতিহ্য ও অবদান সম্পর্কে জানুন।</p>
+        <a class="read-more" href="tribal-history.html">Read More</a>
+      </div>
 
-<div class="articles" id="articleList">
+      <div class="card">
+        <h3>সাঁওতালদের উৎপত্তি ও ইতিহাস</h3>
+        <p>সাঁওতাল জনগোষ্ঠীর ইতিহাস, সমাজ ও সাংস্কৃতিক পরিচয় সম্পর্কে সহজ ভাষায় জানুন।</p>
+        <a class="read-more" href="santal-origin.html">Read More</a>
+      </div>
 
-<div class="card">
+      <div class="card">
+        <h3>সিধু-কানহু ও সাঁওতাল হুল</h3>
+        <p>সিধু-কানহু, সাঁওতাল হুল এবং ১৮৫৫ সালের ঐতিহাসিক আন্দোলন সম্পর্কে বিস্তারিত জানুন।</p>
+        <a class="read-more" href="sidhu-kanhu.html">Read More</a>
+      </div>
 
-<h3>
-AI কী এবং কীভাবে কাজ করে?
-</h3>
+      <div class="card">
+        <h3>Online থেকে কীভাবে Income করবেন?</h3>
+        <p>মোবাইল ব্যবহার করে বৈধভাবে Online Income শুরু করার বিভিন্ন উপায় সম্পর্কে জানুন।</p>
+        <a class="read-more" href="online-income.html">Read More</a>
+      </div>
 
-<p>
-Artificial Intelligence কী,
-এটি কীভাবে কাজ করে এবং সাধারণ মানুষ
-কীভাবে AI ব্যবহার করতে পারে।
-</p>
+      <div class="card">
+        <h3>Google Search কীভাবে কাজ করে?</h3>
+        <p>Google Search, Crawling, Indexing এবং Search Results সম্পর্কে সহজভাবে জানুন।</p>
+        <a class="read-more" href="google-search.html">Read More</a>
+      </div>
 
-<a href="ai.html">
-Read More →
-</a>
+      <div class="card">
+        <h3>Technology সম্পর্কে গুরুত্বপূর্ণ তথ্য</h3>
+        <p>নতুন Technology, Smartphone, Internet এবং Digital World সম্পর্কে সহজ তথ্য জানুন।</p>
+        <a class="read-more" href="technology.html">Read More</a>
+      </div>
 
-</div>
+    </div>
+  </section>
 
-<div class="card">
+  <!-- About -->
+  <section class="about" id="about">
+    <h2>About Deep Online Help</h2>
 
-<h3>
-নিজের Website কীভাবে বানাবেন?
-</h3>
+    <p>
+      Deep Online Help একটি তথ্যভিত্তিক Website যেখানে Technology,
+      Artificial Intelligence, Internet, Website, Online Income,
+      History, Culture এবং বিভিন্ন গুরুত্বপূর্ণ বিষয় সহজ ভাষায় তুলে ধরা হয়।
+    </p>
 
-<p>
-Coding এবং AI ব্যবহার করে
-মোবাইল থেকেই নিজের Website
-তৈরি করার সহজ পদ্ধতি।
-</p>
+    <p>
+      আমাদের লক্ষ্য হলো জটিল বিষয়গুলোকে সহজভাবে মানুষের কাছে পৌঁছে দেওয়া
+      এবং Internet থেকে সঠিক ও দরকারি তথ্য খুঁজে পেতে সাহায্য করা।
+    </p>
+  </section>
 
-<a href="website.html">
-Read More →
-</a>
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
 
-</div>
+    <p>
+      Website সম্পর্কিত কোনো প্রশ্ন, পরামর্শ বা যোগাযোগের জন্য Email করুন:
+    </p>
 
-<div class="card">
-
-<h3>
-সাঁওতাল ইতিহাস ও সংস্কৃতি
-</h3>
-
-<p>
-সাঁওতাল সমাজের ইতিহাস,
-সংস্কৃতি, ঐতিহ্য এবং গুরুত্বপূর্ণ
-ব্যক্তিদের সম্পর্কে জানুন।
-</p>
-
-<a href="santali-history.html">
-Read More →
-</a>
-
-</div>
-
-<div class="card">
-
-<h3>
-ভারতের আদিবাসীদের ইতিহাস ও অবদান
-</h3>
-
-<p>
-ভারতের আদিবাসী জনগোষ্ঠীর ইতিহাস,
-সংস্কৃতি, আন্দোলন এবং দেশের সমাজে
-তাদের গুরুত্বপূর্ণ অবদান সম্পর্কে জানুন।
-</p>
-
-<a href="indigenous-history.html">
-Read More →
-</a>
-
-</div>
-
-<div class="card">
-
-<h3>
-আদিবাসী ইতিহাস ও সংস্কৃতি
-</h3>
-
-<p>
-সাঁওতাল হুল, সিধু-কানহু, চাঁদ-ভৈরব,
-ফুলো-ঝানো, বীরসা মুন্ডা, আদিবাসী
-ভাষা, সংস্কৃতি ও ঐতিহ্য সম্পর্কে জানুন।
-</p>
-
-<a href="tribal-history.html">
-Read More →
-</a>
+    <p>
+      <strong>Email:</strong>
+      <a href="mailto:deepmurmu91@gmail.com">
+        deepmurmu91@gmail.com
+      </a>
+    </p>
+  </section>
 
 </div>
 
-<div class="card">
-
-<h3>
-সাঁওতালদের উৎপত্তি কোথা থেকে?
-</h3>
-
-<p>
-সাঁওতাল জনগোষ্ঠীর উৎপত্তি, প্রাচীন বসতি,
-লোককথা এবং ঐতিহাসিক বিস্তার সম্পর্কে জানুন।
-</p>
-
-<a href="santal-origin.html">
-Read More →
-</a>
-
-</div>
-
-<div class="card">
-
-<h3>
-মোবাইল থেকে Online Income
-</h3>
-
-<p>
-মোবাইল ব্যবহার করে বৈধভাবে
-Online কাজ ও Income করার
-বিভিন্ন পদ্ধতি।
-</p>
-
-<a href="online-income.html">
-Read More →
-</a>
-
-</div>
-
-<div class="card">
-
-<h3>
-Google Search-এ Website আনবেন কীভাবে?
-</h3>
-
-<p>
-Search Engine Optimization এবং
-Google indexing সম্পর্কে সহজ
-নির্দেশিকা।
-</p>
-
-<a href="google-search.html">
-Read More →
-</a>
-
-</div>
-
-<div class="card">
-
-<h3>
-নতুন Technology সম্পর্কে জানুন
-</h3>
-
-<p>
-নতুন প্রযুক্তি, Apps, Internet
-এবং Digital World-এর গুরুত্বপূর্ণ
-তথ্য।
-</p>
-
-<a href="technology.html">
-Read More →
-</a>
-
-</div>
-
-</div>
-
-<section class="about" id="about">
-
-<h2>
-About Deep Online Help
-</h2>
-
-<br>
-
-<p>
-Deep Online Help একটি তথ্যভিত্তিক Website।
-এখানে Technology, Artificial Intelligence (AI),
-Internet, Website, Online Income, History,
-Culture এবং বিভিন্ন গুরুত্বপূর্ণ বিষয় সহজ
-ভাষায় তুলে ধরা হয়।
-</p>
-
-<br>
-
-<p>
-আমাদের লক্ষ্য হলো সাধারণ মানুষের জন্য
-প্রয়োজনীয় তথ্যকে সহজ, পরিষ্কার ও
-ব্যবহারযোগ্যভাবে উপস্থাপন করা, যাতে
-মোবাইল থেকেই সবাই নতুন কিছু শিখতে পারেন।
-</p>
-
-<br>
-
-<p>
-প্রযুক্তি ও ইন্টারনেটের নতুন বিষয় থেকে শুরু করে
-ইতিহাস, সংস্কৃতি এবং শিক্ষামূলক তথ্য—Deep Online Help
-নিয়মিতভাবে বিভিন্ন বিষয়ে সহজ গাইড প্রকাশ করে।
-</p>
-
-</section>
-
-<section class="contact" id="contact">
-
-<h2>
-Contact Us
-</h2>
-
-<br>
-
-<p>
-Deep Online Help সম্পর্কে কোনো প্রশ্ন,
-পরামর্শ, ভুল তথ্য সংশোধন বা অন্য কোনো
-বিষয়ে যোগাযোগ করতে চাইলে আমাদের
-Email-এর মাধ্যমে যোগাযোগ করতে পারেন।
-</p>
-
-<br>
-
-<p>
-আমরা আপনার মতামত ও পরামর্শকে গুরুত্ব দিয়ে দেখি
-এবং প্রয়োজন অনুযায়ী Website-এর তথ্য আরও
-উন্নত করার চেষ্টা করি।
-</p>
-
-<br>
-
-<p>
-
-<strong>Email:</strong>
-
-<a href="mailto:deepmurmu91@gmail.com">
-deepmurmu91@gmail.com
-</a>
-
-</p>
-
-</section>
-
-</div>
-
+<!-- Footer -->
 <footer>
+  <p>© 2026 Deep Online Help. All Rights Reserved.</p>
 
-<p>
-© 2026 Deep Online Help
-</p>
-
-<p>
-
-<a href="privacy.html">
-Privacy Policy
-</a>
-
-|
-
-<a href="terms.html">
-Terms & Conditions
-</a>
-
-|
-
-<a href="disclaimer.html">
-Disclaimer
-</a>
-
-</p>
-
-<p>
-
-<a href="#home">
-Home
-</a>
-
-|
-
-<a href="#about">
-About
-</a>
-
-|
-
-<a href="#contact">
-Contact
-</a>
-
-</p>
-
+  <div style="margin-top:10px;">
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms & Conditions</a>
+    <a href="disclaimer.html">Disclaimer</a>
+  </div>
 </footer>
 
 <script>
-
 function searchArticles(){
 
-let input =
-document.getElementById("searchInput")
-.value
-.toLowerCase()
-.trim();
+  const input =
+    document.getElementById("searchInput").value.toLowerCase().trim();
 
-let cards =
-document.querySelectorAll(".card");
+  const cards =
+    document.querySelectorAll(".card");
 
-cards.forEach(function(card){
+  let found = false;
 
-let text =
-card.innerText.toLowerCase();
+  cards.forEach(function(card){
 
-if(text.includes(input)){
+    const text =
+      card.innerText.toLowerCase();
 
-card.style.display="block";
+    if(input === "" || text.includes(input)){
+      card.style.display = "block";
+      found = true;
+    }else{
+      card.style.display = "none";
+    }
 
-}else{
+  });
 
-card.style.display="none";
-
+  document.getElementById("noResult").style.display =
+    found ? "none" : "block";
 }
 
+document.getElementById("searchInput").addEventListener("keyup", function(){
+  searchArticles();
 });
-
-}
-
 </script>
 
 </body>
-  </html>
+</html>
