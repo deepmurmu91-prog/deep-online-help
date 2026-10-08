@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<meta name="theme-color" content="#111827">
+
+<title>Deep Online Help</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f3f4f6;
+    color:#111827;
+    padding-bottom:80px;
+}
+
+.header{
+    background:#111827;
+    color:white;
+    padding:25px 20px;
+    text-align:center;
+}
+
+.header h1{
+    font-size:28px;
+    margin-bottom:5px;
+}
+
+.header p{
+    color:#d1d5db;
+    font-size:14px;
+}
+
+.search{
+    padding:15px;
+    background:white;
+}
+
+.search input{
+    width:100%;
+    padding:13px;
+    border:1px solid #d1d5db;
+    border-radius:10px;
+    font-size:16px;
+    outline:none;
+}
+
+.container{
+    padding:15px;
+}
+
+.welcome{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    margin-bottom:18px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.welcome h2{
+    margin-bottom:8px;
+}
+
+.welcome p{
+    color:#555;
+}
+
+.section-title{
+    margin:20px 0 12px;
+    font-size:22px;
+}
+
+.card{
+    background:white;
+    padding:18px;
+    border-radius:15px;
+    margin-bottom:14px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.card h3{
+    margin-bottom:7px;
+}
+
+.card p{
+    color:#555;
+    font-size:14px;
+    margin-bottom:12px;
+}
+
+.button{
+    display:inline-block;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    padding:10px 15px;
+    border-radius:8px;
+    font-size:14px;
+}
+
+.button:active{
+    transform:scale(.97);
+}
+
+.about{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    margin-top:20px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.about p{
+    color:#555;
+    margin-top:8px;
+}
+
+.bottom-nav{
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    background:#111827;
+    display:flex;
+    justify-content:space-around;
+    padding:10px 5px;
+    z-index:1000;
+}
+
+.bottom-nav a{
+    color:white;
+    text-decoration:none;
+    font-size:12px;
+    text-align:center;
+}
+
+.bottom-nav span{
+    display:block;
+    font-size:20px;
+    margin-bottom:2px;
+}
+
+footer{
+    text-align:center;
+    color:#777;
+    padding:25px 10px;
+    font-size:13px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Header -->
+
+<header class="header">
+
+<h1>Deep Online Help</h1>
+
+<p>Technology • AI • Internet • History • Culture</p>
+
+</header>
+
+
+<!-- Search -->
+
+<div class="search">
+
+<input
+type="text"
+id="searchBox"
+placeholder="🔎 Article খুঁজুন..."
+onkeyup="searchArticles()">
+
+</div>
+
+
+<div class="container">
+
+<!-- Welcome -->
+
+<section class="welcome">
+
+<h2>Welcome to Deep Online Help 👋</h2>
+
+<p>
+সহজ ভাষায় Technology, AI, Internet, History,
+Culture এবং Online Income সম্পর্কে দরকারি তথ্য জানুন।
+</p>
+
+</section>
+
+
+<!-- Articles -->
+
+<h2 class="section-title">📚 Latest Articles</h2>
+
+
+<div id="articles">
+
+
+<!-- AI -->
+
+<div class="card">
+
+<h3>🤖 AI কী এবং কীভাবে কাজ করে?</h3>
+
+<p>
+Artificial Intelligence কী, কীভাবে কাজ করে এবং
+সাধারণ মানুষ কীভাবে AI ব্যবহার করতে পারে।
+</p>
+
+<a
+class="button"
+href="https://deepmurmu91-prog.github.io/deep-online-help/ai.html">
+Read More →
+</a>
+
+</div>
+
+
+<!-- Website -->
+
+<div class="card">
+
+<h3>🌐 নিজের Website কীভাবে বানাবেন?</h3>
+
+<p>
+Coding এবং AI ব্যবহার করে মোবাইল থেকেই
+নিজের Website তৈরি করার সহজ পদ্ধতি।
+</p>
+
+<a
+class="button"
+href="https://deepmurmu91-prog.github.io/deep-online-help/website.html">
+Read More →
+</a>
+
+</div>
+
+
+<!-- Santali History -->
+
+<div class="card">
+
+<h3>📚 সাঁওতাল ইতিহাস ও সংস্কৃতি</h3>
+
+<p>
+সাঁওতাল সমাজের ইতিহাস, সংস্কৃতি, ঐতিহ্য
+এবং গুরুত্বপূর্ণ বিষয় সম্পর্কে জানুন।
+</p>
+
+<a
+class="button"
+href="https://deepmurmu91-prog.github.io/deep-online-help/santali-history.html">
+Read More →
+</a>
+
+</div>
+
+
+<!-- Indigenous History -->
+
+<div class="card">
+
+<h3>🏹 ভারতের আদিবাসীদের ইতিহাস</h3>
+
+<p>
+ভারতের আদিবাসী জনগোষ্ঠীর ইতিহাস,
+সংস্কৃতি এবং গুরুত্বপূর্ণ অবদান সম্পর্কে জানুন।
+</p>
+
+<a
+class="button"
+href="https://deepmurmu91-prog.github.io/deep-online-help/indigenous-history.html">
+Read More →
+</a>
+
+</div>
+
+
+<!-- Sidhu Kanhu -->
+
+<div class="card">
+
+<h3>🔥 সিধু-কানহু ও সাঁওতাল হুল</h3>
+
+<p>
+সিধু-কানহু এবং ১৮৫৫ সালের ঐতিহাসিক
+সাঁওতাল হুল সম্পর্কে বিস্তারিত জানুন।
+</p>
+
+<a
+class="button"
+href="https://deepmurmu91-prog.github.io/deep-online-help/sidhu-kanhu.html">
+Read More →
+</a>
+
+</div>
+
+
+<!-- Online Income -->
+
+<div class="card">
+
+<h3>💰 Online থেকে Income</h3>
+
+<p>
+মোবাইল ব্যবহার করে বৈধভাবে Online Income
+করার বিভিন্ন পদ্ধতি সম্পর্কে জানুন।
+</p>
+
+<a
+class="button"
+href="https://deepmurmu91-prog.github.io/deep-online-help/online-income.html">
+Read More →
+</a>
+
+</div>
+
+
+<!-- Google -->
+
+<div class="card">
+
+<h3>🔎 Google Search কীভাবে কাজ করে?</h3>
+
+<p>
+Google Search, Crawling, Indexing এবং
+Search Results সম্পর্কে সহজভাবে জানুন।
+</p>
+
+<a
+class="button"
+href="https://deepmurmu91-prog.github.io/deep-online-help/google-search.html">
+Read More →
+</a>
+
+</div>
+
+
+<!-- Technology -->
+
+<div class="card">
+
+<h3>📱 নতুন Technology সম্পর্কে জানুন</h3>
+
+<p>
+নতুন Technology, Apps, Internet এবং
+Digital World সম্পর্কে গুরুত্বপূর্ণ তথ্য জানুন।
+</p>
+
+<a
+class="button"
+href="https://deepmurmu91-prog.github.io/deep-online-help/technology.html">
+Read More →
+</a>
+
+</div>
+
+
+</div>
+
+
+<!-- About -->
+
+<section class="about">
+
+<h2>ℹ️ About</h2>
+
+<p>
+Deep Online Help একটি তথ্যভিত্তিক Website ও App।
+এখানে Technology, AI, Internet, Website,
+Online Income, History এবং Culture সম্পর্কে
+সহজ ভাষায় তথ্য প্রকাশ করা হয়।
+</p>
+
+<p>
+আমাদের লক্ষ্য হলো মোবাইল ব্যবহারকারীদের
+সহজ ও দরকারি তথ্য প্রদান করা।
+</p>
+
+</section>
+
+
+</div>
+
+
+<!-- Footer -->
+
+<footer>
+
+© 2026 Deep Online Help
+
+<br><br>
+
+Technology • AI • Internet • History • Culture
+
+</footer>
+
+
+<!-- Bottom Navigation -->
+
+<nav class="bottom-nav">
+
+<a href="#">
+<span>🏠</span>
+Home
+</a>
+
+<a href="#articles">
+<span>📚</span>
+Articles
+</a>
+
+<a href="#about">
+<span>ℹ️</span>
+About
+</a>
+
+<a href="mailto:deepmurmu91@gmail.com">
+<span>📩</span>
+Contact
+</a>
+
+</nav>
+
+
+<script>
+
+function searchArticles(){
+
+    let input =
+    document.getElementById("searchBox")
+    .value
+    .toLowerCase();
+
+    let cards =
+    document.querySelectorAll(".card");
+
+    cards.forEach(function(card){
+
+        let text =
+        card.innerText.toLowerCase();
+
+        if(text.includes(input)){
+            card.style.display="block";
+        }
+
+        else{
+            card.style.display="none";
+        }
+
+    });
+
+}
+
+</script>
+
+</body>
+</html>
